@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 162410, guid: 016e7bf62a334b6408f97e97b5e49ec7, type: 3}
       propertyPath: m_Name
-      value: ZombieRig Variant
+      value: ZombieRig
       objectReference: {fileID: 0}
     - target: {fileID: 474340, guid: 016e7bf62a334b6408f97e97b5e49ec7, type: 3}
       propertyPath: m_RootOrder
@@ -112,6 +112,19 @@ CapsuleCollider:
   m_Height: 5.47431
   m_Direction: 1
   m_Center: {x: 0.0417865, y: 2.723079, z: 0}
+--- !u!114 &-2811727613280182953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6077220247386015200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 498f3454cf036e341af6c213ced12824, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 60
 --- !u!114 &6802476153110522596
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -126,4 +139,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   seeDistance: 10
   attackDistance: 10
-  enemySpeed: 1
+  enemySpeed: 2
