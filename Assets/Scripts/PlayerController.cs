@@ -1,11 +1,14 @@
-﻿
+﻿using UnityEngine.UI;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] float speed = 2f;
     [SerializeField] float jumpForce = 2f;
+    [SerializeField] float HP = 100f;
 
+    public Scrollbar ScrollbarHP;
+ 
     private readonly Vector3 jumpDirection = Vector3.up;
     public bool isGround { get; private set; }
     private new Rigidbody rigidbody;
@@ -48,6 +51,7 @@ public class PlayerController : MonoBehaviour
 
     private void GetInput()
     {
+        #region KeyController
         if (Input.GetKey(KeyCode.W))
         {
             transform.localPosition += transform.forward * speed * Time.deltaTime;
@@ -64,5 +68,36 @@ public class PlayerController : MonoBehaviour
         {
             transform.localPosition += transform.right * speed * Time.deltaTime;
         }
+        #endregion
     }
+
+   //private void OnTriggerEnter(Collider other)
+   // {
+   //     if (other.gameObject.tag == "Barbed")
+   //     {
+   //         HP -= 10f;
+   //         ScrollbarHP.size = HP;
+   //         if (HP < 1f)
+   //         {
+   //             Death();
+   //         }
+   //     }
+
+   //     if (other.gameObject.tag == "Zombie")
+   //     {
+   //         HP -= 25f;
+   //         ScrollbarHP.size = HP;
+   //         if (HP < 1f)
+   //         {
+   //             Death();
+   //         }
+   //     }
+   // }
+
+   // private void Death()
+   // {
+   //     Destroy(gameObject);
+   // }
+
+
 }
