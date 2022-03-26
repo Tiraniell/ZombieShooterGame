@@ -71,33 +71,35 @@ public class PlayerController : MonoBehaviour
         #endregion
     }
 
-   //private void OnTriggerEnter(Collider other)
-   // {
-   //     if (other.gameObject.tag == "Barbed")
-   //     {
-   //         HP -= 10f;
-   //         ScrollbarHP.size = HP;
-   //         if (HP < 1f)
-   //         {
-   //             Death();
-   //         }
-   //     }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Barbed")
+        {
+            HP -= 10f;
+            ScrollbarHP.size = HP;
+            if (HP < 1f)
+            {
+                Death();
+            }
+        }
 
-   //     if (other.gameObject.tag == "Zombie")
-   //     {
-   //         HP -= 25f;
-   //         ScrollbarHP.size = HP;
-   //         if (HP < 1f)
-   //         {
-   //             Death();
-   //         }
-   //     }
-   // }
+        if (other.gameObject.tag == "Zombie")
+        {
+            HP -= 25f;
+            ScrollbarHP.size = HP;
+            if (HP < 1f)
+            {
+                Death();
+            }
+        }
+    }
 
-   // private void Death()
-   // {
-   //     Destroy(gameObject);
-   // }
+    private void Death()
+    {
+        
+        Destroy(gameObject);
+        Debug.Log("Death");
+    }
 
 
 }
