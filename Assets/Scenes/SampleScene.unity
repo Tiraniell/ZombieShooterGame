@@ -1242,7 +1242,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7233355286381660974, guid: 3318a0dcc90627d4394e56a36f632ee6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 16.08
+      value: 16.74
       objectReference: {fileID: 0}
     - target: {fileID: 7233355286381660974, guid: 3318a0dcc90627d4394e56a36f632ee6, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2791,7 +2791,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7233355286381660974, guid: 3318a0dcc90627d4394e56a36f632ee6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 16.08
+      value: 16.88
       objectReference: {fileID: 0}
     - target: {fileID: 7233355286381660974, guid: 3318a0dcc90627d4394e56a36f632ee6, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3245,67 +3245,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1944146798}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1001 &1957262515
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1296111343283780684, guid: f20b5191696c7534daf02ed1baba83f2, type: 3}
-      propertyPath: m_Name
-      value: ZombieRig
-      objectReference: {fileID: 0}
-    - target: {fileID: 1296111343284124354, guid: f20b5191696c7534daf02ed1baba83f2, type: 3}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1296111343284124354, guid: f20b5191696c7534daf02ed1baba83f2, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -13.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1296111343284124354, guid: f20b5191696c7534daf02ed1baba83f2, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1296111343284124354, guid: f20b5191696c7534daf02ed1baba83f2, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -27.78
-      objectReference: {fileID: 0}
-    - target: {fileID: 1296111343284124354, guid: f20b5191696c7534daf02ed1baba83f2, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1296111343284124354, guid: f20b5191696c7534daf02ed1baba83f2, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1296111343284124354, guid: f20b5191696c7534daf02ed1baba83f2, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1296111343284124354, guid: f20b5191696c7534daf02ed1baba83f2, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1296111343284124354, guid: f20b5191696c7534daf02ed1baba83f2, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1296111343284124354, guid: f20b5191696c7534daf02ed1baba83f2, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: 1296111343284124354, guid: f20b5191696c7534daf02ed1baba83f2, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1659447240203803178, guid: f20b5191696c7534daf02ed1baba83f2, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: f20b5191696c7534daf02ed1baba83f2, type: 3}
 --- !u!1001 &1985481106
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3495,33 +3434,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2093514929}
   m_CullTransparentMesh: 1
---- !u!1 &2125548154 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1296111343283780684, guid: f20b5191696c7534daf02ed1baba83f2, type: 3}
-  m_PrefabInstance: {fileID: 1957262515}
-  m_PrefabAsset: {fileID: 0}
---- !u!195 &2125548155
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2125548154}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 2
-  m_BaseOffset: 0
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
 --- !u!1001 &2137900085
 PrefabInstance:
   m_ObjectHideFlags: 0
