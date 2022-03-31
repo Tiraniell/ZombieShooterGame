@@ -23,7 +23,7 @@ public class ObjectSpawner : MonoBehaviour
         {
             xPos = Random.Range(-25, 25);
             zPos = Random.Range(-25, 25);
-            Instantiate(_obstacle, new Vector3(xPos, 0, zPos), Quaternion.identity.normalized);
+            Instantiate(_obstacle, new Vector3(xPos, 0, zPos), Quaternion.identity);
             yield return new WaitForSeconds(0.01f);
             enemyCount += 1;
 
