@@ -128,7 +128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 498f3454cf036e341af6c213ced12824, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 50
+  health: 70
 --- !u!114 &1659447240203803178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -144,3 +144,4 @@ MonoBehaviour:
   seeDistance: 10
   attackDistance: 10
   enemySpeed: 2
+  target: {fileID: 0}

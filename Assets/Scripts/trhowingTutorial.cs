@@ -42,7 +42,16 @@ public class trhowingTutorial : MonoBehaviour
 
         Rigidbody projectileRb = projectile.GetComponent<Rigidbody>();
 
-        Vector3 forceToAdd = cam.transform.forward * throwForce + transform.up * throwUpwardForce;
+        Vector3 forceDirection = cam.transform.forward;
+
+        RaycastHit hit;
+
+        if (Physics.Raycast(cam.position, cam.forward, out hit, 500f))
+        {
+            forceDirection = (hit.point - attackPoint.position).normalized;
+        }
+
+        Vector3 forceToAdd = forceDirection * throwForce + transform.up * throwUpwardForce;
 
         projectileRb.AddForce(forceToAdd, ForceMode.Impulse);
 

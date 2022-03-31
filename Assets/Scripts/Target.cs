@@ -2,19 +2,15 @@ using UnityEngine;
 
 public class Target : MonoBehaviour
 {
+    [Header("Stats")]
     public float health = 50f;
-    public void takeDamage (float amount)
+
+    public void takeDamage (float damage)
     {
-        health -= amount;
+        health -= damage;
         if (health <= 0f)
         {
-            Die();
+            Destroy(gameObject);
         }
-    }
-
-    
-    void Die ()
-    {
-        Destroy(gameObject);
     }
 }
