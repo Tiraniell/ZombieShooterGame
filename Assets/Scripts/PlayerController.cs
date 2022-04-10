@@ -98,6 +98,8 @@ namespace LernProject
                     Death();
                 }
             }
+           
+
         }
 
         private void Death()
