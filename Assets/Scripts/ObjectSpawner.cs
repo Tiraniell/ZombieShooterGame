@@ -26,7 +26,11 @@ public class ObjectSpawner : MonoBehaviour
             Instantiate(_obstacle, new Vector3(xPos, 0, zPos), Quaternion.identity);
             yield return new WaitForSeconds(0.01f);
             enemyCount += 1;
-
+        }
+        
+        if(enemyCount >= 0)
+        {
+            Debug.Log("END GAME !!!");
         }
         
     }
